@@ -1,0 +1,668 @@
+{
+	"info": {
+		"_postman_id": "2c6242ee-a64e-4241-b92a-269ed3c8bab4",
+		"name": "CPII-Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33750233",
+		"_collection_link": "https://tdspj7.postman.co/workspace/2TDSPJ-Workspace~03a4852c-57c8-40aa-8afc-e3864d5ca168/collection/33750233-2c6242ee-a64e-4241-b92a-269ed3c8bab4?action=share&source=collection_link&creator=33750233"
+	},
+	"item": [
+		{
+			"name": "Veiculo",
+			"item": [
+				{
+					"name": "localhost/veiculos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/veiculos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/veiculos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Jetta\",\r\n    \"anoDeFabricacao\": 2022,\r\n    \"cor\": \"Cinza\",\r\n    \"preco\": 250000.00,\r\n    \"cilindradas\": 496,\r\n    \"modelo\": \"GLI\",\r\n    \"palavraDeEfeito\": \"Performance\",\r\n    \"fabricante\": {\r\n        \"nome\": \"VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA\",\r\n        \"nomeFantasia\": \"VOLKSWAGEN\"\r\n    \r\n    },\r\n    \"tipo\": {\r\n        \"nome\": \"Sedã médio\"\r\n    },\r\n    \"acessorio\": [\r\n        {\r\n            \"nome\": \"Vidro elétrico\",\r\n            \"preco\": 200.00\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/veiculos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/veiculos/{id}/acessorios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/veiculos/1/acessorios",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"veiculos",
+								"1",
+								"acessorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/veiculos/{id}/acessorios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/veiculos/1/acessorios",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"veiculos",
+								"1",
+								"acessorios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Acessorio",
+			"item": [
+				{
+					"name": "localhost/acessorio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/acessorio",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"acessorio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/acessorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Vidro elétrico\",\r\n    \"preco\": 200.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/acessorio",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"acessorio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/acessorio/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/acessorio/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"acessorio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loja",
+			"item": [
+				{
+					"name": "localhost/loja",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/loja",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/loja",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"CDG Autos\",\r\n    \"veiculo\": [\r\n        {\r\n            \"nome\": \"Jetta\",\r\n            \"anoDeFabricacao\": 2022,\r\n            \"cor\": \"Cinza\",\r\n            \"preco\": 250000.00,\r\n            \"cilindradas\": 496,\r\n            \"modelo\": \"GLI\",\r\n            \"palavraDeEfeito\": \"Performance\",\r\n            \"fabricante\": {\r\n                \"nome\": \"VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA\",\r\n                \"nomeFantasia\": \"VOLKSWAGEN\"\r\n            \r\n            },\r\n            \"tipo\": {\r\n                \"nome\": \"Sedã médio\"\r\n            },\r\n            \"acessorio\": [\r\n                {\r\n                    \"nome\": \"Vidro elétrico\",\r\n                    \"preco\": 200.00\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/loja",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loja"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/loja/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/loja/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loja",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/loja/{id}/veiculos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/loja/1/veiculos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loja",
+								"1",
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/loja/{id}/veiculos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/loja/1/veiculos",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"loja",
+								"1",
+								"veiculos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo de Veiculo",
+			"item": [
+				{
+					"name": "localhost/tipo-de-veiculo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/tipo-de-veiculo",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tipo-de-veiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/tipo-de-veiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sedã médio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/tipo-de-veiculo",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tipo-de-veiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/tipo-de-veiculo/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/tipo-de-veiculo/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"tipo-de-veiculo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fabricante",
+			"item": [
+				{
+					"name": "localhost/fabricantes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/fabricantes",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"fabricantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/fabricantes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA\",\r\n    \"nomeFantasia\": \"VOLKSWAGEN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/fabricantes",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"fabricantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/fabricantes/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/fabricantes/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"fabricantes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Característica",
+			"item": [
+				{
+					"name": "localhost/caracteristicas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/caracteristicas",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"caracteristicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/caracteristicas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Esportivo\",\r\n    \"descricao\": \"Carro com mais foco em potência do que conforto \",\r\n    \"veiculo\" : {\r\n        \"nome\": \"Jetta\",\r\n        \"preco\": 250000.00,\r\n        \"fabricante\": {\r\n            \"nome\": \"VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA\",\r\n            \"nomeFantasia\": \"VOLKSWAGEN\"\r\n        },\r\n        \"tipo\": {\r\n            \"nome\": \"Sedã médio\"\r\n        },\r\n        \"acessorio\": [\r\n            {\r\n                \"nome\": \"Vidro elétrico\",\r\n                \"preco\": 200.00\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/caracteristicas",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"caracteristicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/caracteristicas/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/caracteristicas/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"caracteristicas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
