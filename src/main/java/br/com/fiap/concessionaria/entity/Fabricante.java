@@ -27,6 +27,12 @@ public class Fabricante {
 
     private String nomeFantasia;
 
-
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(
+            name = "FOTO",
+            referencedColumnName = "ID_FOTO",
+            foreignKey = @ForeignKey(name = "FK_FABRICANTE_FOTO")
+    )
+    private Foto logo;
 
 }
